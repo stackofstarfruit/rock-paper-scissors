@@ -10,6 +10,7 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
     window.alert("You played " + playerSelection);
     window.alert("Computer played " + computerSelection);
     if(playerSelection === computerSelection) {
@@ -70,9 +71,9 @@ function game() {
         } else {
             numTies++;
         }
-        window.alert("You have " + numWins + " wins, " + numTies + " ties, and " + numLosses + "losses.");
+        window.alert("You have " + numWins + " wins, " + numTies + " ties, and " + numLosses + " losses.");
     }
-    window.alert("FINAL RESULT: " + numWins + " wins, " + numTies + " ties, and " + numLosses + "losses.");
+    window.alert("FINAL RESULT: " + numWins + " wins, " + numTies + " ties, and " + numLosses + " losses.");
 }
 
 game();
